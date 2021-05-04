@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>App Nota</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col m-5 p-5">
+
+                <div class="form-group">
+                    <h1>Digite suas Notas</h1>
+                    <small id="helpId" class="form-text text-muted">Ao digitar suas
+                        notas abaixo, será gerado o resultado do cálculo da média: (((- * 1,50) + (- * 1,50) + (- * 4,00) + (- *
+                        3,00)) / 10) = 0</small>
+                        <small id="helpId" class="form-text text-muted">Caso digite qualtquer numero acima de 10 será considerado valor 10</small>
+                    <input type="number" min="1" max="10" class="form-control form-control-lg mt-2" name="av1" id="nota1"
+                        aria-describedby="helpId" placeholder="Digite sua nota Av1">
+                    <input type="number" min="1" max="10" class="form-control form-control-lg mt-2" name="av2" id="nota2"
+                        aria-describedby="helpId" placeholder="Digite sua nota Av2">
+                    <input type="number" min="1" max="10" class="form-control form-control-lg mt-2" name="av3" id="nota3"
+                        aria-describedby="helpId" placeholder="AV Final Discursiva">
+                    <input type="number" min="1" max="10" class="form-control form-control-lg mt-2" name="av4" id="nota4"
+                        aria-describedby="helpId" placeholder="AV Final Objetiva">
+                    <button href="" type="submit" class="btn-primary btn-lg btn-block mt-2" onclick="exibir()">Gerar
+                        Resultado</button>
+                </div>
+                <div id="root"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
